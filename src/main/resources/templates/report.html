@@ -1,0 +1,96 @@
+<style>
+	.aqb-col-12 {
+		width: 100%;
+	}
+	.aqb-col-6 {
+		width: 50%;
+	}
+	.aqb-col-3 {
+		width: 25%;
+	}
+	.aqb-col-12, .aqb-col-6, .aqb-col-3 {
+		float: left;
+	}
+	.aqb-aqlogo {
+	    width: 50%;
+	}
+	.aqb-root {
+		font-family: Verdana;
+		font-size: 12px;
+	    border: 1px solid #ccc;
+	    background-color: white;
+	    padding: 5px 10px;
+	    box-shadow: 0px 0px 15px rgba(0,0,0,.25);
+	    width: 350px;
+	}
+	.aqb-align-center {
+		text-align: center;
+	}
+	.aqb-align-right {
+		text-align: right;
+	}
+	.aqb-bottom-row-margin {
+	    margin-top: 25px;
+	    margin-bottom: 7px;
+	}
+	.aqb-run-status {
+	    position: relative;
+	    top: 6px;
+	    font-weight: bold;
+	}
+	.aqb-report-style {
+	    margin-top: 20px;
+	    margin-bottom: 5px;
+	}
+	.aqb-tc-count {
+		margin-top: 5px;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	.aqb-tc-count.aqb-tc-total {
+		color: #787878;
+	}
+	.aqb-tc-count.aqb-tc-pass {
+		color: green;
+	}
+	.aqb-tc-count.aqb-tc-fail {
+		color: red;
+	}
+	.aqb-tc-count.aqb-tc-notrun {
+		color: orange;
+	}
+</style>
+=====>
+<div class="aqb-root aqb-col-12">
+    <div class="aqb-col-12">
+        <div class="aqb-col-12">
+            <div class="aqb-col-6">
+                <img class="aqb-aqlogo" src="data:image/png;base64,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">
+            </div>
+            <div class="aqb-col-6 aqb-align-right aqb-run-status">
+                %s
+            </div>
+        </div>
+        <div class="aqb-col-12 aqb-bottom-row-margin">
+            <div class="aqb-col-3 aqb-align-center">
+                <div>TOTAL</div>
+                <div class="aqb-tc-count aqb-tc-total">%d</div>
+            </div>
+            <div class="aqb-col-3 aqb-align-center">
+                <div>PASS</div>
+                <div class="aqb-tc-count aqb-tc-pass">%d</div>
+            </div>
+            <div class="aqb-col-3 aqb-align-center">
+                <div>FAIL</div>
+                <div class="aqb-tc-count aqb-tc-fail">%d</div>
+            </div>
+            <div class="aqb-col-3 aqb-align-center">
+                <div>NOT RUN</div>
+                <div class="aqb-tc-count aqb-tc-notrun">%d</div>
+            </div>
+        </div>
+        <div class="aqb-col-12 aqb-report-style">
+            Link to Report: <a href="%s" target="_blank"><i>accelQ Report</i></a>
+        </div>
+    </div>
+</div>
