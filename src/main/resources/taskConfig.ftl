@@ -1,0 +1,6 @@
+[@ww.textfield label="accelQ URL" name="appURL" required='true'/]
+[@ww.textfield label="Username" name="username" required='true'/]
+[@ww.password label="Password" name="password" required='true'/]
+[@ww.textfield label="Project Name" name="projectName" required='true'/]
+[@ww.textfield label="Job Pid" name="jobPid" required='true'/]
+[@ww.textfield label="Run Parameters" name="runParamStr" required='true'/]
