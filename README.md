@@ -24,4 +24,17 @@ On the Jenkins or Bamboo front, add “accelQ Connect” as a step in the requir
 ![mceclip0 2](https://user-images.githubusercontent.com/40689807/43002083-26dc4aec-8c45-11e8-94aa-b2eb7676ff3f.png)
 
 
+
 accelQ job gets executed based on the triggers setup for the CI project and returns back the summary result. Test execution notification is emailed to the recipients specified during the test run creation. You are also present a link to the complete result.
+
+
+## About accelQ
+[accelQ](https://www.accelq.com/product.html) is a cloud based continuous testing platform for Functional & API Automation. 
+accelQ brings automation to entire quality lifecycle with a highly intelligent platform powered with advanced autonomics.
+
+- Codeless natural language Functional, API Automation
+- No IDE, Fully browser based 
+- Visualize and drive quality with accelQ Universe
+- Design/Automate/Maintain your testing 3X Faster
+
+
