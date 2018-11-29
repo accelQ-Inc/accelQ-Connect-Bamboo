@@ -95,13 +95,7 @@
             <groupId>org.apache.avalon.framework</groupId>
             <artifactId>avalon-framework-impl</artifactId>
             <version>4.3.1</version>
-        </dependency>             
-        <dependency>
-            <groupId>javax.inject</groupId>
-            <artifactId>javax.inject</artifactId>
-            <version>1</version>
-            <scope>provided</scope>
-        </dependency> 
+        </dependency>
     </dependencies>
 
     <build>
@@ -164,4 +158,55 @@
             </plugin>
         </plugins>
     </build>
+    <repositories>
+        <repository>
+          <id>atlassian-public</id>
+          <url>https://maven.atlassian.com/repository/public</url>
+          <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+            <checksumPolicy>warn</checksumPolicy>
+          </snapshots>
+          <releases>
+            <enabled>true</enabled>
+            <checksumPolicy>warn</checksumPolicy>
+          </releases>
+        </repository>
+       <repository>
+         <id>atlassian-plugin-sdk</id>
+          <url>file://${env.ATLAS_HOME}/repository</url>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+          <releases>
+            <enabled>true</enabled>
+            <checksumPolicy>warn</checksumPolicy>
+          </releases>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+          <id>atlassian-public</id>
+          <url>https://maven.atlassian.com/repository/public</url>
+          <releases>
+            <enabled>true</enabled>
+            <checksumPolicy>warn</checksumPolicy>
+          </releases>
+          <snapshots>
+            <updatePolicy>never</updatePolicy>
+            <checksumPolicy>warn</checksumPolicy>
+          </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+          <id>atlassian-plugin-sdk</id>
+          <url>file://${env.ATLAS_HOME}/repository</url>
+          <releases>
+            <enabled>true</enabled>
+            <checksumPolicy>warn</checksumPolicy>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
 </project>
